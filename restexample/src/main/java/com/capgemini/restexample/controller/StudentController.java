@@ -41,7 +41,7 @@ public class StudentController {
 		//Update
 		@PutMapping("/updatestudent/{id}")
 		public Student updateStudent(@RequestBody Student student, @PathVariable("id") Integer studentId){
-			System.out.println("Done changes in code");
+			System.out.println("Done changes in code rebuild it ");
 			Student studentData = service.updateStudent(student, studentId);
 			return studentData;
 		}
