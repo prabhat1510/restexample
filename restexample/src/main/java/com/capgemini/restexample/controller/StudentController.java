@@ -36,7 +36,7 @@ public class StudentController {
 		//Delete
 		@DeleteMapping("/deletestudent/{id}")
 		public void deleteStudent(@PathVariable("id") Integer studentId){
-			System.out.println("Done changes in code rebuild it ");
+			
 			service.deleteStudent(studentId);
 		}
 		//Update
